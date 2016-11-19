@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换肤</title>
+    <meta name="keywords" content="换肤">
+    <meta name="generator" content="Austin">
+    <meta name="description" content="测试换肤效果">
+    <meta name="换肤" content="">
+    <style type="text/css">
+        *{margin: 0;padding: 0}
+        .title{background-color: rgba(100,121,148,0.7);width: 100%}
+        .title a{color: #fff;font-size: 18px;text-decoration: none;margin-top: 30px;margin-left: 18%;}
+        body{background: url("images/1.jpg")no-repeat;height: 1000px}
+        /*start box*/
+        .box{width:100%;height: 250px;background-color:#fff;position:absolute;top:0;left: 0;display: none}
+        /*end box*/
+        /*start head*/
+        .head{width: 100%;height: 45px;border-bottom: 1px solid #D1BBC8}
+        .head a{color: #a32a2a;font-size: 18px;text-decoration: none;float: right;margin-right: 80px;margin-top: 12px}
+        /*end head*/
+        /*start box1*/
+        .box1{width: 590px;height: 180px;;margin: 0 auto;}
+        /*end box1*/
+        /*start box2*/
+        .box2 img{margin: 0 1px 1px 0;display: block;float: left;width: 97px;height: 59px}
+        .box2 a:hover img{filter: alpha(opacity=0.7);-moz-opacity: 0.7;opacity: 0.7}
+        .box2 a{float:left;position: relative}
+        .box2 .big{width:195px ;height:119px}
+        .box2 .last{position:relative;top:-60px}
+        .box2 a img.xz1, .box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9 {position: absolute;bottom:1px;right: 1px;width: 20px;height: 20px;display: none}
+        .box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12{position: absolute;bottom:1px;right: 1px;width: 20px;height: 20px;top:-21px;display: none}
+        /*end box2*/
+    </style>
+</head>
+<body>
+<div class="title"><a  href="#">换肤</a></div>
+<div class="box">
+    <div class="head"><a href="#">收起</a></div>
+    <div class="box1">
+        <div class="box2">
+            <a href="#" class="k1"><img class="big" src="images/1-1.jpg" />
+                        <img class="xz1" src="images/xz.png"/>
+            </a>
+           <a href="#"class="k2" ><img src="images/2-2.jpg" alt="#" />
+                        <img class="xz2" src="images/xz.png"/>
+           </a>
+            <a href="#" class="k3"><img src="images/3-3.jpg" alt="#"/>
+                         <img class="xz3" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k4" ><img src="images/4-4.jpg" alt="#"/>
+                         <img class="xz4" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k5"><img src="images/5-5.jpg" alt="#"/>
+                        <img class="xz5" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k6"><img src="images/6-6.jpg" alt="#"/>
+                        <img class="xz6" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k7"><img class="big" src="images/7-7.jpg"/>
+                        <img class="xz7" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k8"><img src="images/8-8.jpg" alt="#"/>
+                        <img class="xz8" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k9"><img src="images/9-9.jpg" alt="#"/>
+                        <img class="xz9" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k10"><img class="last" src="images/10-10.jpg"/>
+                        <img class="xzl10" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k11"><img class="last" src="images/11-11.jpg"/>
+                        <img class="xzl11" src="images/xz.png"/>
+            </a>
+            <a href="#" class="k12"><img class="last" src="images/12-12.jpg"/>
+                        <img class="xzl12" src="images/xz.png"/>
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+    $(".title").click(function(){
+        $(".box").css("display","block")
+    });
+    $(".box2 .k1").click(function(){
+        $(".box2 a img.xz1").css("display","block");
+        $(" .box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none")
+    });
+    $(".box2 .k2").click(function(){
+        $(".box2 a img.xz2").css("display","block");
+        $(".box2 a img.xz1,.box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k3").click(function(){
+        $(".box2 a img.xz3").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k4").click(function(){
+        $(".box2 a img.xz4").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k5").click(function(){
+        $(".box2 a img.xz5").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k6").click(function(){
+        $(".box2 a img.xz6").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k7").click(function(){
+        $(".box2 a img.xz7").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5,.box2 a img.xz6,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k8").click(function(){
+        $(".box2 a img.xz8").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5,.box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k9").click(function(){
+        $(".box2 a img.xz9").css("display","block")
+        $(".box2 a img.xz1,.box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5,.box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xzl10,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none");
+    });
+    $(".box2 .k10").click(function(){
+        $(".box2 a img.xzl10").css("display","block")
+        $(" .box2 a img.xz1, .box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl11,.box2 a img.xzl12").css("display","none")
+    });
+    $(".box2 .k11").click(function(){
+        $(".box2 a img.xzl11").css("display","block")
+        $(" .box2 a img.xz1, .box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl12").css("display","none")
+    });
+    $(".box2 .k12").click(function(){
+        $(".box2 a img.xzl12").css("display","block")
+        $(" .box2 a img.xz1, .box2 a img.xz2, .box2 a img.xz3, .box2 a img.xz4, .box2 a img.xz5, .box2 a img.xz6,.box2 a img.xz7,.box2 a img.xz8,.box2 a img.xz9,.box2 a img.xzl10,.box2 a img.xzl11").css("display","none")
+    });
+    $(".head").click(function(){
+        $(".box").css("display","none")
+    });
+    $(".box1 a").click(function(){
+        var i=$(this).index()+1;
+        $("body").css("background",'url(images/'+i+'.jpg)');
+    });
+</script>
+</body>
+</html>
